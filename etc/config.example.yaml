@@ -1,0 +1,5 @@
+---
+
+log_level: Info
+i2c_device: /dev/i2c-1
+exporter_listen: 127.0.0.1:9757

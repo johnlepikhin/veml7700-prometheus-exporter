@@ -1,0 +1,24 @@
+[package]
+authors = ["Evgenii Lepikhin <e.lepihin@postgrespro.ru>"]
+edition = "2021"
+name = "veml7700-prometheus-exporter"
+version = "0.1.0"
+rust-version = "1.65"
+
+[dependencies]
+anyhow = "1.0"
+clap = {version = "4.0", features = ["derive"]}
+embedded-hal = "0.2"
+linux-embedded-hal = "0.3.0"
+prometheus_exporter = "0.8.5"
+serde = {version = "1.0", features = ["derive"]}
+serde_json = "1.0"
+serde_yaml = "0.9"
+slog = "2.7"
+slog-envlogger = "2.2"
+slog-scope = "4.4"
+slog-stdlog = "4.1.1"
+slog-syslog = { git = "https://github.com/johnlepikhin/syslog", branch = "fix/loglevel-compare" }
+slog-term = "2.9.0"
+structdoc = "0.1.4"
+veml6030 = "0.1.2"
